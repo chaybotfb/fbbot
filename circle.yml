@@ -19,7 +19,7 @@ deployment:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker tag ci_web1604:latest chaybotfb/fbbot:latest
       - docker tag ci_web1604:latest chaybotfb/fbbot:latest-1604
-      - docker tag ci_web1404:latest mattrayner/lamp:latest-1404
+      - docker tag ci_web1404:latest chaybotfb/fbbot:latest-1404
       - docker push chaybotfb/fbbot:latest
       - docker push chaybotfb/fbbot:latest-1604
       - docker push chaybotfb/fbbot:latest-1404
